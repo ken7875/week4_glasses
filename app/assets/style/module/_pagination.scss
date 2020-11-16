@@ -1,0 +1,30 @@
+.pagination{
+    .container{
+        display: flex;
+        justify-content: center;
+        .active{
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+    }
+    margin-bottom: 156px;
+    a{
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        padding: 15px;
+        border: 1px solid #555555;
+        background-color: $white;
+    }
+    .next a{
+        background-color: #555555;
+    }
+    
+    @media( max-width: 768px){
+        margin-bottom: 56px;
+        a{
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+}

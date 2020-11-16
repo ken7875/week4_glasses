@@ -1,0 +1,89 @@
+.productsBanner{
+    margin-bottom: 88px;
+    ul{
+        justify-content: center;
+        li{
+            a{
+                img{
+                    margin-right: 8px;
+                }
+                text-decoration: none;
+                color: #000000;
+                justify-content: center;
+                padding: 24px 0 24px 0;
+            }
+            width: 28%;
+            font-size: 42px;
+            position: relative;
+            border: 1px solid #DCDCDC;
+        }
+    }
+    .dash{
+        width: 100%;
+        margin-bottom: 0;
+        background-color: $secondary;
+        height: 16px;
+        bottom: 0;
+        position: absolute
+    }
+    .icon{
+        display: block;
+        max-width: 48px;
+        height: auto;
+    }
+    .img{
+        justify-content: space-between;
+        img{
+            display: block;
+            max-width: 49%;
+            height: auto;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+    @media( max-width: 992px){
+        ul li{
+            font-size: 28px;
+            max-width: 256px;
+            a{
+                padding: 16px 0 16px 0;
+            }
+        }
+        .icon{
+            width: 32px;
+        }
+        .dash{
+            height: 8px;
+        }
+        .img{
+            img{
+                max-width: 50%;
+                height: 309px;
+                margin-right: 0;
+            }
+        }
+    }
+    @media( max-width: 768px){
+        margin-bottom: 30px;
+        ul li{
+            max-width: 33.33%;
+            height: 35px;
+            font-size: 14px;
+            a{
+                padding: 8px 0 8px 0;
+            }
+        }
+        .dash{
+            height: 4px;
+        }
+        .icon{
+            width: 15px;
+            height: 12px;
+        }
+        .img{
+            img{
+                height: 144px;
+            }
+        }
+    }
+}

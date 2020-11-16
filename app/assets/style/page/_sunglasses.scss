@@ -1,0 +1,92 @@
+.sunglasses_products{
+    h2{
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-bottom: 40px;
+    }
+    ul{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            max-width: 30%;
+            margin-bottom: 104px;
+        }
+        img{
+            background-size: cover;
+            background-position: center center;
+            height: 224px;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            color: #000000;
+            margin-bottom: 8px;
+        }
+        .price{
+            color: $secondary;
+        }
+        button{
+            cursor: pointer;
+            border: none;
+            padding: 12px;
+            margin-right: 8px;
+        }
+        .color_dark{
+            background-color: $Darkwood;
+            margin-right: 8px;
+        }
+        .color_light{
+            background-color: $Lightwood;
+            
+        }
+    }
+    .pagination{
+        display: none;
+    }
+    @media( max-width: 992px){
+        h3{
+            margin-bottom: 32px;
+        }
+        ul li{
+            max-width: 47%;
+            margin-bottom: 72px;
+        }
+        img{
+            height: 164px;
+            margin-bottom: 5px;
+        }
+        .content{
+            justify-content: space-between;
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+    @media( max-width: 768px){
+        h2{
+            margin-bottom: 5px;
+        }
+        h3{
+            margin-bottom: 20px;
+        }
+        ul li{
+            max-width: 100%;
+        }
+        .content p{
+            font-size: 16px;
+        }
+        button{
+            padding: 10px;
+        }
+        .phoneSecondPage{
+            display: none;
+        }
+        .pagination{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+

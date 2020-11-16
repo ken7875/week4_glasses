@@ -1,0 +1,70 @@
+.header{
+    background-color: $secondary;
+    height: 108px;
+    align-items: center;
+    justify-content: space-between;
+    h1 a{
+        display: block;
+        width: 80px;
+        height: 49px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true");
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    ul li{
+        margin-right: 64px;
+        a{
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+    li:hover{
+        cursor: pointer;
+    }
+}
+.phone-listGroup{
+    display: none;
+}
+
+@media(max-width: 992px){
+    .header{
+        align-items: center;
+        justify-content: space-between;
+        ul li{
+            margin-right: 40px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .header{
+        display: flex;
+        justify-content: center;
+        height: 138px;
+        ul{
+            display: none;
+        }  
+    }
+    .phone-listGroup{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .phone-listGroup{
+        li{
+            width: 50%;
+            height: 44px;
+            background-color: #650300;
+            border: 1px solid #FFFFFF;
+            font-size: 20px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+    }
+}
